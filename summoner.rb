@@ -83,9 +83,6 @@ class Summoners
     check_response_error!(response.code)
     
     response
-  rescue => e
-    puts e.message
-    exit
   end
   
   def set_json_obj(name)
@@ -98,6 +95,3 @@ class Summoners
     end
   end
 end
-
-test = Summoners.new("kidvanilla")
-puts test.to_s
